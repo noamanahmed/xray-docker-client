@@ -1,0 +1,13 @@
+---
+version: "3.9"
+services:
+  x2ray:
+    build:
+      context: .
+      dockerfile: ./docker/x2ray.Dockerfile
+    container_name: x2ray
+    hostname: x2ray
+    restart: always
+    ports:
+      - 1080:1080   # SOCKS5 Proxy port
+      - 8888:8888   # HTTP Proxy port    

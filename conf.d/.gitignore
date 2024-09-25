@@ -1,0 +1,4 @@
+tinyproxy/*
+x2ray/*
+!x2ray/x2ray.json.example
+
